@@ -19,5 +19,5 @@ def get_transactions(address):
 
     transactions = {}
     for transaction in address.transactions:
-        transactions[transaction.hash] = convertToTransactionJSONSerializable(Transaction(transaction))
+        transactions[transaction.time] = convertToTransactionJSONSerializable(Transaction(transaction))
     return jsonify(transactions)

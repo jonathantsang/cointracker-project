@@ -49,7 +49,7 @@ Run `./bootstrap.sh` to run the virtual environment and set up the server.
 ```
 
 ### Improvements for future
-- Have the Transaction and Address be predefined schemas that can be serialized/deserialized from the Blockchain API. (Instead of manually mapping the values over)
-- Allow for more parameters to be passed to the endpoint to customize the results
+- Have the Transaction and Address be predefined schemas that can be serialized/deserialized from the Blockchain API. (Instead of manually mapping the values over since the returned results need to be JSON serializable)
+- Allow for more parameters to be passed to the endpoint to customize the results further than limit and offset
 - time is given as an EPOCH time, could be translated to a human-readable format
 - the final balance is given with a few digits of precision, this can tweaked to show it more accurately (3887413 is actually 0.03887413 BTC)
